@@ -1,0 +1,97 @@
+/* Minimalistic styles for the navbar */
+.navbar {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: space-between;
+    /* This ensures elements are spaced out */
+    align-items: center;
+    padding: 10px 20px;
+    background-color: rgb(216, 216, 216);
+    position: sticky;
+    width: 100vw;
+    z-index: 1001;
+    height: 50px;
+    /* Adjusted height for better spacing */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.4);
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+    /* Align links to the left */
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar ul li {
+    margin: 0 15px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+}
+
+.navbar ul li a:hover {
+    color: #007bff;
+}
+
+.navbar .logo {
+    font-size: 24px;
+    /* Adjusted logo size */
+    font-weight: bold;
+    color: #333;
+    margin-right: 20px;
+    /* Space between logo and navbar items */
+}
+
+.navbar .logoImg {
+    width: 40px;
+    /* Adjusted size to fit better */
+    height: auto;
+    margin-right: 10px;
+    /* Reduced margin for alignment */
+}
+
+.navbar .search-bar {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    /* Pushes the search bar to the far right */
+}
+
+.navbar .search-bar input[type="text"] {
+    padding: 5px 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.navbar .search-bar input[type="text"]:focus {
+    border-color: #007bff;
+}
+
+.navbar .search-bar button {
+    padding: 5px 10px;
+    margin-left: 5px;
+    font-size: 14px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.navbar .search-bar button:hover {
+    background-color: #0056b3;
+}
+
+.home {
+    padding-left: 490px;
+}
