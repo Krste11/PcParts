@@ -22,20 +22,44 @@
 
 /* Styling for the vertical menu */
 .pc-parts-menu {
+    position: relative;
     width: 100%;
     border: 1px solid #ddd;
-    background-color: #f9f9f9;
+    background-color: #ececec;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-family: Consolas, monospace;
+    border-radius: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
 .pc-parts-list {
     list-style: none;
     padding: 0;
     margin: 0;
+    font-family: Consolas, monospace;
+}
+
+.customize-h2 {
+    font-family: 'Arial', monospace;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 30px;
+    color: #444444;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: bold;
+    background: linear-gradient(to right, #ff6a00, #ff9500);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding: 10px 0;
+    border-bottom: 2px solid #ff6a00;
 }
 
 .pc-parts-list li {
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid #c8c8c8;
+    margin: 0 10px; /* Add margin to make the lines shorter */
 }
 
 .pc-parts-list li:last-child {
@@ -46,15 +70,32 @@
     display: block;
     padding: 15px;
     text-decoration: none;
-    color: #333;
+    color: #333333;
     font-weight: bold;
     text-align: left;
+    font-size: 15px;
     transition: background-color 0.3s, color 0.3s;
+    font-family: Consolas, monospace;
+    border-radius: 2px;
 }
 
 .pc-parts-list a:hover {
-    background-color: #007bff;
+    background-color: #ff6a00;
     color: #fff;
 }
 
+.hover-box {
+    position: absolute;
+    left: 100%; /* Position it next to the vertical menu */
+    width: 500px;
+    height: 400px; /* Adjust height to match menu item height */
+    background-color: rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(0, 0, 0, 0.2); /* Initially hidden */
+    z-index: -1; /* Place it behind the text */
+    transition: top 0.3s ease; /* Smooth transition */
+}
 
+.pc-parts-list li:hover ~ .hover-box {
+    display: block;
+    top: calc(10px + (40px * var(--hover-index))); /* Adjust based on item height */
+}
