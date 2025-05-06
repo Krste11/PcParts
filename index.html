@@ -18,33 +18,56 @@
     <!-- External CSS -->
     <link rel="stylesheet" href="./styles/footer/footer.css">
     <link rel="stylesheet" href="./styles/navbar/navbar.css">
+    <link rel="stylesheet" href="./styles/body/body.css">
 
 </head>
 
 <body>
     <!-- Navbar -->
     <section>
-        <nav class="navbar">
-            <ul>
-                <li class="logo">
-                    <img class="logoImg" src="assets/navbar/logo.png">
-                </li>
-                <li>
-                    <form class="search-bar" action="/search" method="GET">
-                        <input type="text" name="query" placeholder="Search..." aria-label="Search">
-                        <button type="submit">Search</button>
-                    </form>
-                </li>
-                <li class="home"><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+        <div class="navbar">
+            <div class="left-side">
+                <div class="logo"><img class="logoImg" src="assets/navbar/logo.png"></div>
+                <div class="search-bar">
+                    <input type="text" placeholder="Search...">
+                    <button></button>
+                </div>
+            </div>
+            <div class="right-side">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+        </div>
     </section>
 
+
+    <!-- Section for images -->
+<section class="front-page">
+        <div class="left-container">
+            <section class="pc-parts-menu">
+                <ul class="pc-parts-list">
+                    <li><a href="#cpu">CPU</a></li>
+                    <li><a href="#gpu">GPU</a></li>
+                    <li><a href="#motherboard">Motherboard</a></li>
+                    <li><a href="#ram">RAM</a></li>
+                    <li><a href="#storage">Storage</a></li>
+                    <li><a href="#psu">Power Supply</a></li>
+                    <li><a href="#case">Case</a></li>
+                </ul>
+            </section>
+            
+            
+        </div>
+        <div class="right-container">
+        </div>
+</section>
+
+
     <!-- Footer -->
-    <section style="margin-top: 500px;">
+    <section>
         <footer>
             <div class="container">
                 <div class="row">
