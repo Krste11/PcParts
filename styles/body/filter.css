@@ -1,0 +1,362 @@
+.front-page {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left-container {
+    background-color: #f8f9fa;
+    padding: 20px;
+    height: auto;
+    min-height: 600px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.right-container {
+    background-color: rgb(143, 110, 110);
+    padding: 20px;
+    height: auto;
+    /* Change from fixed height */
+    min-height: 600px;
+    /* Minimum height */
+    flex: 4;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Styling for the vertical menu */
+.pc-parts-menu {
+    width: 100%;
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.pc-parts-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.pc-parts-list li {
+    border-bottom: 1px solid #ddd;
+}
+
+.pc-parts-list li:last-child {
+    border-bottom: none;
+}
+
+.pc-parts-list a {
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    text-align: left;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.pc-parts-list a:hover {
+    background-color: #007bff;
+    color: #fff;
+}
+
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin: 30px;
+    padding: 10px;
+    display: flex;
+}
+
+.paginationBtn {
+    margin: 10px;
+    border-radius: 10px;
+    color: magenta;
+}
+
+.paginationBtn :hover {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.product-card {
+    position: relative;
+    border: 1px solid #e0e0e0;
+    padding: 15px;
+    width: 200px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border-radius: 12px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: visible;
+    /* Allow popup to show */
+}
+
+.product-title {
+    font-size: 16px;
+    margin: 5px 0;
+    font-weight: 500;
+    height: 40px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+
+
+.product-price {
+    font-size: 18px;
+    transition: all 0.3s ease;
+}
+
+
+
+.product-price {
+    font-size: 18px;
+    font-weight: bold;
+    color: #2c3e50;
+    margin: 5px 0;
+}
+
+.product-category {
+    font-size: 14px;
+    color: #7f8c8d;
+    margin-bottom: 15px;
+}
+
+.product-button {
+    margin-top: auto;
+    padding: 10px 20px;
+    font-size: 14px;
+    border: none;
+    border-radius: 8px;
+    background-color: #3498db;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 90%;
+}
+
+.product-button:hover {
+    background-color: #2980b9;
+    transform: scale(1.03);
+}
+
+.product-card img {
+    width: 70%;
+    height: 120px;
+    object-fit: contain;
+    margin-bottom: 15px;
+}
+
+.categories {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 100%;
+    padding: 10px;
+}
+
+.categoryBtn {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 8px;
+    background-color: #e0e0e0;
+    cursor: pointer;
+    text-align: left;
+    transition: all 0.3s ease;
+    width: 100%;
+}
+
+.categoryBtn:hover {
+    background-color: #007bff;
+    color: white;
+    transform: translateX(5px);
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 0;
+    gap: 10px;
+}
+
+.paginationBtn {
+    padding: 10px 18px;
+    border-radius: 8px;
+    border: none;
+    background-color: #3498db;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 40px;
+}
+
+.paginationBtn:hover {
+    background-color: #2980b9;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.paginationBtn:disabled {
+    background-color: #bdc3c7;
+    cursor: not-allowed;
+    transform: none;
+    box-shadow: none;
+}
+
+/* Active page indicator */
+.current-page {
+    padding: 8px 16px;
+    background-color: #f1f1f1;
+    border-radius: 8px;
+    font-weight: 600;
+}
+
+.blur-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 999;
+}
+
+.thankYouDiv {
+    position: fixed;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: white;
+    padding: 20px;
+    z-index: 1000;
+    text-align: center;
+}
+
+.thankYouDiv img {
+    width: 100%;
+    max-width: 300px;
+}
+
+.okBtn {
+    margin-top: 15px;
+    padding: 8px 16px;
+    border-radius: 10px;
+    background-color: #5cb85c;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.productCardsDiv {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    width: 100%;
+}
+
+#cartItems {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 0;
+    width: 100%;
+}
+
+#cartItems li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px;
+    border-bottom: 1px solid #eee;
+}
+
+.removeBtn {
+    background-color: #ff4444;
+    color: white;
+    border: none;
+    padding: 4px 8px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.removeBtn:hover {
+    background-color: #cc0000;
+}
+
+
+.product-button {
+    background: linear-gradient(135deg, #3498db, #2ecc71);
+    /* ... rest of your button styles ... */
+}
+
+.product-button:hover {
+    background: linear-gradient(135deg, #2980b9, #27ae60);
+}
+
+.paginationBtn {
+    background: linear-gradient(135deg, #3498db, #9b59b6);
+}
+
+.paginationBtn:hover {
+    background: linear-gradient(135deg, #2980b9, #8e44ad);
+}
+
+
+.simple-alert {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%) translateY(100px);
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 12px 24px;
+    border-radius: 8px;
+    z-index: 1000;
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+.simple-alert.show {
+    transform: translateX(-50%) translateY(0);
+    opacity: 1;
+}
+
+.product-card {
+    position: relative;
+}
+
+/* Clickable overlay */
+.card-link {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    /* Behind the button but above other content */
+}
+
+/* Ensure button stays clickable */
+.product-button {
+    position: relative;
+    z-index: 2;
+    /* Above the link overlay */
+}
