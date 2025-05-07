@@ -29,38 +29,48 @@
 
 /* Styling for the vertical menu */
 .pc-parts-menu {
+    position: relative;
     width: 100%;
     border: 1px solid #ddd;
-    background-color: #f9f9f9;
+    background-color: #ececec;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-family: Consolas, monospace;
+    border-radius: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
 .pc-parts-list {
     list-style: none;
     padding: 0;
     margin: 0;
+    font-family: Consolas, monospace;
 }
 
 .pc-parts-list li {
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid #c8c8c8;
+    margin: 0 10px; /* Add margin to make the lines shorter */
 }
 
 .pc-parts-list li:last-child {
     border-bottom: none;
 }
 
-.pc-parts-list a {
+.pc-parts-list button {
     display: block;
     padding: 15px;
     text-decoration: none;
-    color: #333;
+    color: #333333;
     font-weight: bold;
     text-align: left;
+    font-size: 15px;
     transition: background-color 0.3s, color 0.3s;
+    font-family: Consolas, monospace;
+    border-radius: 2px;
 }
 
-.pc-parts-list a:hover {
-    background-color: #007bff;
+.pc-parts-list button:hover {
+    background-color: #ff6a00;
     color: #fff;
 }
 
