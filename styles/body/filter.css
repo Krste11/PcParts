@@ -29,7 +29,6 @@
 
 /* Styling for the vertical menu */
 .pc-parts-menu {
-    position: relative;
     width: 100%;
     border: 1px solid #ddd;
     background-color: #ececec;
@@ -38,13 +37,14 @@
     border-radius: 5px;
     padding-top: 5px;
     padding-bottom: 5px;
+    align-self: flex-start; /* Align at the top of the container */
 }
 
 .pc-parts-list {
     list-style: none;
     padding: 0;
     margin: 0;
-    font-family: Consolas, monospace;
+    font-family: Consolas, monospace;    
 }
 
 .pc-parts-list li {
@@ -94,23 +94,25 @@
     color: #fff;
 }
 
+/* Product Card Styles */
 .product-card {
+    font-family: Consolas, monospace; /* Apply Consolas font */
     position: relative;
     border: 1px solid #e0e0e0;
     padding: 15px;
-    width: 200px;
-    height: 300px;
+    width: 250px;
+    height: auto;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    text-align: center;
-    border-radius: 12px;
+    align-items: flex-start; /* Align content to the left */
+    text-align: left; /* Align text to the left */
+    border-radius: 5px;
     background-color: #fff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     overflow: visible;
-    /* Allow popup to show */
 }
 
+/* Product Title */
 .product-title {
     font-size: 16px;
     margin: 5px 0;
@@ -122,15 +124,15 @@
     -webkit-box-orient: vertical;
 }
 
-
-
-.product-price {
-    font-size: 18px;
-    transition: all 0.3s ease;
+/* Divider Line */
+.product-divider {
+    width: 100%;
+    height: 1px;
+    background-color: #e0e0e0; /* Faint gray line */
+    margin: 10px 0;
 }
 
-
-
+/* Product Price */
 .product-price {
     font-size: 18px;
     font-weight: bold;
@@ -144,21 +146,23 @@
     margin-bottom: 15px;
 }
 
+/* Product Button Styles */
 .product-button {
     margin-top: auto;
+    align-self: center;
     padding: 10px 20px;
     font-size: 14px;
     border: none;
-    border-radius: 8px;
-    background-color: #3498db;
+    border-radius: 5px;
+    background-color: #ff6a00; /* Use the orange color */
     color: white;
     cursor: pointer;
     transition: all 0.3s ease;
-    width: 90%;
+    width: 100%;
 }
 
 .product-button:hover {
-    background-color: #2980b9;
+    background-color: #e65a00; /* Slightly darker orange for hover */
     transform: scale(1.03);
 }
 
@@ -167,6 +171,7 @@
     height: 120px;
     object-fit: contain;
     margin-bottom: 15px;
+    align-self: center;
 }
 
 .categories {
@@ -202,11 +207,12 @@
     gap: 10px;
 }
 
+/* Pagination Button Styles */
 .paginationBtn {
     padding: 10px 18px;
     border-radius: 8px;
     border: none;
-    background-color: #3498db;
+    background-color: #ff6a00; /* Use the orange color */
     color: white;
     font-weight: 600;
     cursor: pointer;
@@ -218,7 +224,7 @@
 }
 
 .paginationBtn:hover {
-    background-color: #2980b9;
+    background-color: #e65a00; /* Slightly darker orange for hover */
     transform: translateY(-2px);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
@@ -312,22 +318,6 @@
 }
 
 
-.product-button {
-    background: linear-gradient(135deg, #3498db, #2ecc71);
-    /* ... rest of your button styles ... */
-}
-
-.product-button:hover {
-    background: linear-gradient(135deg, #2980b9, #27ae60);
-}
-
-.paginationBtn {
-    background: linear-gradient(135deg, #3498db, #9b59b6);
-}
-
-.paginationBtn:hover {
-    background: linear-gradient(135deg, #2980b9, #8e44ad);
-}
 
 
 .simple-alert {

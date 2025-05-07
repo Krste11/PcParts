@@ -43,6 +43,7 @@ function showProducts() {
             <!-- Regular card content -->
             <img src="${product.image}" alt="${product.title}">
             <h3 class="product-title">${product.title}</h3>
+            <div class="product-divider"></div>
             <p class="product-price">$${product.price}</p>
             
             <button onclick="addToCart(${product.id})" class="product-button">
