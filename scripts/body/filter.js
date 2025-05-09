@@ -15,9 +15,9 @@ const elements = {
 
 async function fetchProducts() {
   try {
-    const response = await fetch("https://fakestoreapi.com/products");
+    const response = await fetch("https://fakestoreapi.in/api/products");
     const data = await response.json();
-    products = data;
+    products = data.products;
     filteredProducts = products;
     displayCategories();
     showProducts();
